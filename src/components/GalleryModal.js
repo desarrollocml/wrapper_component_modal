@@ -1,12 +1,8 @@
 import Modal from "./Modal";
 
-export default function GalleryModal({isOpen,title,isClose}) {
+export default function GalleryModal(props) {
   return (
-        <Modal 
-        isOpen={isOpen}
-        title={title}
-        isClose={isClose}
-        >
+        <Modal {...props}>
             <h1>Photo</h1>
         </Modal>
     )
