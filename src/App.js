@@ -7,11 +7,14 @@ function App() {
   const openModal = () => {
     setIsOpenModal(true);
   };
+  const closeModal = () => {
+    setIsOpenModal(false);
+  };
 
   return (
     <div>
       <button onClick={openModal}>Open Modal</button>
-       <Modal isOpen={isOpenModal}></Modal>
+       <Modal isOpen={isOpenModal} isClose={closeModal}></Modal>
     </div>
   );
 }
