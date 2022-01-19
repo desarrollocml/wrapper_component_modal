@@ -34,7 +34,6 @@ function App() {
       </Modal>
      <GalleryModal 
       isOpen={isOpenGalleryModal}
-      title="Gallery"
       isClose={closeGalleryModal}
      ></GalleryModal>
     </div>
