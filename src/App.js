@@ -1,9 +1,17 @@
+import { useState } from "react";
 import Modal from "./components/Modal";
 
 function App() {
+  const [isOpenModal, setIsOpenModal] = useState(false);
+
+  const openModal = () => {
+    setIsOpenModal(true);
+  };
+
   return (
     <div>
-      <Modal></Modal>
+      <button onClick={openModal}>Open Modal</button>
+       <Modal isOpen={isOpenModal}></Modal>
     </div>
   );
 }
